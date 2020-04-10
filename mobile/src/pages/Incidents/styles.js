@@ -1,73 +1,76 @@
-import {StyleSheet} from 'react-native';
-
+import { StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
 export default StyleSheet.create({
-
-    container: {
-        flex: 1,
+    container:{
+        flex:1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 2,
+        paddingTop: Constants.statusBarHeight + 20,
     },
 
-    header: {
+    header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
     },
 
     headerText:{
-        fotSize: 15,
+        fontSize: 16,
         color: '#737380',
-    },  
-    
+    },
+
+    headerTextBold:{
+        fontWeight: 'bold',
+    },
+
     title:{
-        fotSize: 30,
-        marginBotom: 165,
+        fontSize: 30,
+        marginBottom: 16,
         marginTop: 48,
         color: '#13131a',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
 
-    description: {
-        fonSize: 16,
+    description:{
+        fontSize: 16,
         lineHeight: 24,
-        color: '#737380'
+        color: '#737380',
     },
 
-    incidentList: {
-        marginTop: 32,
+    incidentList:{
+        marginTop: 24,
     },
 
-    incident: {
+    incident:{
         padding: 24,
         borderRadius: 8,
-        backgorundColor: '#fff',
+        backgroundColor: '#fff',
         marginBottom: 16,
     },
 
     incidentProperty:{
-        fontsize: 14,
+        fontSize: 14,
         color: '#41414d',
-        fontWight: 'bold',
+        fontWeight: 'bold',
     },
 
     incidentValue:{
         marginTop: 8,
         fontSize: 15,
+        marginBottom: 24,
         color: '#737380',
     },
 
     detailsButton:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'ceter',
+        alignItems: 'center',
     },
 
-    detailsButtonText: {
-        color: '#e02041',
-        fontSize: 15,
-        fontWeight: 'bold'
-    },
+    detailsButtonText:{
+        fontSize: 16,
+        color: '#E02040',
+        fontWeight: 'bold',
+    }
 
 });

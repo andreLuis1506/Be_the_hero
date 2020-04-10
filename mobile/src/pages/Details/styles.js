@@ -1,55 +1,57 @@
 import { StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
 
 export default StyleSheet.create({
     container:{
         flex: 1,
-        paddingHorrizontal: 24,
+        paddingHorizontal: 24,
         paddingTop: Constants.statusBarHeight + 20,
     },
 
     header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        aligItems: 'center'
+        alignItems: 'center',
+        marginBottom: 48,
     },
 
-    incident: {
+    incident:{
         padding: 24,
         borderRadius: 8,
-        backgorundColor: '#fff',
+        backgroundColor: '#fff',
         marginBottom: 16,
-        marginTop: 48,
     },
 
     incidentProperty:{
-        fontsize: 14,
+        fontSize: 14,
         color: '#41414d',
-        fontWight: 'bold'
+        fontWeight: 'bold',
+        marginTop: 24,
     },
 
     incidentValue:{
         marginTop: 8,
         fontSize: 15,
-        color: '#737380'
+        color: '#737380',
     },
 
     contactBox:{
-        padding:24,
-        borderRadius:8,
-        backgroundColor: '#FFF',
+        padding: 24,
+        borderRadius: 8,
+        backgroundColor: '#fff',
         marginBottom: 16,
     },
 
     heroTitle:{
-        fontWeight:' bold',
         fontSize: 20,
         color: '#13131a',
-        lineHeight: 30,
+        lineHeight:30,
+        fontWeight: 'bold',
     },
 
-    heroDescription: {
-        fontsize: 15,
-        color:'#131380',
+    heroDescription:{
+        fontSize: 16,
+        color: '#737380',
         marginTop: 16,
     },
 
@@ -60,16 +62,17 @@ export default StyleSheet.create({
     },
 
     action:{
-        backgroundColor: '#e02041',
-        borderRadius:8,
-        height:50,
+        backgroundColor: '#E02040',
+        borderRadius: 8,
+        height: 50,
         width: '48%',
         justifyContent: 'center',
         alignItems: 'center',
     },
+
     actionText:{
-        color:'#FFFF',
-        fontSize: 15,
+        color:'#fff',
+        fontSize: 16,
         fontWeight: 'bold',
     }
 
